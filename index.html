@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Adaptive 1</title>
+  </head>
+  <body>
+    <header class="header">
+
+      <div class="header__wrapper wrapper">
+ 
+        <nav class="nav">
+          <img class="logo" src="./img/Free_Sample_By_Wix.png">
+            <ul class="menu-list">
+              <li class="menu-list__item">
+                <a
+                  href="index.html"
+                  class="menu-list__link menu-list__link--active"
+                  >Главная</a
+                >
+              </li>
+              <li class="menu-list__item">
+                <a href="about.html" class="menu-list__link">Обо мне</a>
+              </li>
+              <li class="menu-list__item">
+                <a href="services.html" class="menu-list__link">Услуги</a>
+              </li>
+            </ul>
+                                 <!-- burger start -->
+                                 <div class="burger-menu">
+                                  <div class="burger-menu__content">
+                                      <img src="./img/cancel_btn.png" alt="error:(" class="burger-menu__btn_close">
+                                      <input type="text" class="burger-menu__input">
+                                      <ul class="burger-menu__list">
+                                          <li class="burger-menu__item">
+                                              <a href="#">Главная</a>
+                                          </li>
+                                          <li class="burger-menu__item">
+                                              <a href="#">Обо мне</a>
+                                          </li>
+                                          <li class="burger-menu__item">
+                                              <a href="#">Услуги</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <!-- burger end -->
+                              <img src="./img/Sort.svg" alt="" class="navbar__btn_burger">
+          </nav>
+          <div class="avatar1">
+          <img src="img/2022-08-03 14.38.18.jpg" alt="Avatar" class="avatar">
+          <a href="hire-me.html" class="brand">
+            <button class="btn btn--red">Нанять меня</button>
+          </a>
+        </div>
+        </div>
+      </div>
+    </header>
+<!-- Main start-->
+    <main class="main">
+      <div class="main__wrapper wrapper">
+        
+        <span class="main__subtitle">Каримов</span>
+        <span class="main__subtitle">Чынгыз</span>
+        <p>Просто люблю кодить</p>
+        <div class="main__footer">
+          <a href="services.html" class="btn btn--red">Мои услуги</a>
+          <a href="hire-me.html" class="btn">Связаться со мной</a>
+        </div>
+
+        <div class="bg-container">
+          <div class="bg-container__text">Java Script</div>
+          <div class="bg-container__text">Developer</div>
+        </div>
+      </div>
+    </main>
+<!-- Main end -->
+    <!-- Footer start -->
+    <footer>
+      <div class="footer__inner">
+      <img src="./img/Free_Sample_By_Wix.png" alt="error:(" class="footer__logo">
+        <div class="footer__inner-logo">
+          <a href="https://www.facebook.com/home.php"><img src="./img/Social Media Logos (Community)/social logo icon-1.svg" alt=""></a>
+          <a href="https://web.telegram.org/z/"><img src="./img/Social Media Logos (Community)/social logo icon-2.svg" alt=""></a>
+          <a href="https://www.instagram.com/"><img src="./img/Social Media Logos (Community)/social logo icon.svg" alt=""></a>
+        </div>
+    </div>
+  </footer>
+    <!-- Footer end  -->
+    <script>
+      let openBtn = document.querySelector('.navbar__btn_burger');
+      let closeBtn = document.querySelector('.burger-menu__btn_close');
+      let burgerMenu = document.querySelector('.burger-menu');
+
+      openBtn.addEventListener('click', () => {
+          burgerMenu.style.display = 'block';
+      });
+      closeBtn.addEventListener('click', () => {
+          burgerMenu.style.display = 'none';
+      });
+  </script>
+  </body>
+</html>
